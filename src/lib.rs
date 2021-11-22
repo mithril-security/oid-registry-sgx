@@ -81,8 +81,10 @@ use std::borrow::Cow;
 use std::collections::HashMap;
 use std::convert::From;
 
+#[cfg(not(target_env = "sgx"))]
 mod load;
 
+#[cfg(not(target_env = "sgx"))]
 pub use load::*;
 
 /// An entry stored in the OID registry
