@@ -39,4 +39,4 @@ x509 = []
 x962 = []
 
 [dependencies]
-der-parser = "6.0.0"
+der-parser = "8.2.0"
